@@ -15,7 +15,7 @@
 
 - **Shell**: [Zsh](https://www.zsh.org/)
 - **Framework**: [Oh My Zsh](https://ohmyz.sh/)
-- **Prompt**: [Starship](https://starship.rs/) (極簡、快速、可自定義的 Prompt)
+- **Shell prompt（提示符）**: [Starship](https://starship.rs/)（極簡、快速、可自定義的提示符）
 
 ### Zsh Plugins
 
@@ -30,6 +30,21 @@
   - Node.js: `node`, `npm`
   - 其他: `dotenv`
 
+### Starship 主題
+
+- **Starship**: [Starship](https://starship.rs/)
+  - 使用 `tokyo-night` **preset**（Starship 內建預設），風格接近 Tokyo Night 配色
+
+#### Starship 安裝與配置
+
+```bash
+# 安裝 Starship
+curl -sS https://starship.rs/install.sh | sh
+
+# 套用 Tokyo Night 主題
+starship preset tokyo-night -o ~/.config/starship.toml
+```
+
 ## 🚀 快速開始
 
 ### 1. 安裝前置需求
@@ -40,7 +55,7 @@
 # 安裝 Oh My Zsh (如果尚未安裝)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# 安裝 Starship Prompt
+# 安裝 Starship（提示符）
 curl -sS https://starship.rs/install.sh | sh
 ```
 
