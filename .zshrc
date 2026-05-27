@@ -17,6 +17,7 @@ plugins=(
   brew
   docker-compose
   z
+  virtualenv
 )
 source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
